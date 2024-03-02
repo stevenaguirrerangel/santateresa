@@ -13,6 +13,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -411,6 +417,15 @@
                 <span class="fw-bold">Email: </span> contact@contact.com
               </li>
             </ul>
+            <div class="text-center">
+              <button
+                class="btn btn-warning btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#enroll"
+              >
+                Get In Touch
+              </button>
+            </div>
           </div>
           <div id="map" class="col-md"></div>
         </div>
@@ -463,8 +478,8 @@
                 <input type="text" class="form-control" id="last-name" />
               </div>
               <div class="mb-3">
-                <label for="phone" class="col-form-label"> Company: </label>
-                <input type="text" class="form-control" id="phone" />
+                <label for="business" class="col-form-label"> Company: </label>
+                <input type="text" class="form-control" id="business" />
               </div>
               <div class="mb-3">
                 <label for="email" class="col-form-label"> Email: </label>
@@ -473,6 +488,11 @@
               <div class="mb-3">
                 <label for="phone" class="col-form-label"> Phone: </label>
                 <input type="tel" class="form-control" id="phone" />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="col-form-label"> Message: </label>
+                <!-- <input type="tel" class="form-control" id="message" /> -->
+                <textarea class="form-control" id="message" rows="3"></textarea>
               </div>
             </form>
           </div>
