@@ -28,3 +28,20 @@ body::before {
 .navbar-brand {
   max-width: 50%;
 }
+
+.img {
+  max-width: 25%;
+}
+
+.address {
+  text-decoration: none;
+  color: black;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
