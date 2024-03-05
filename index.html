@@ -25,11 +25,6 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-    <!-- <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script> -->
     <link rel="stylesheet" href="style.css" />
     <title>Santa Teresa Produce</title>
   </head>
@@ -194,12 +189,6 @@
               healthy and nutritious fruits and vegetables. We hold ourselves
               accountable for every step, from farm to table.
             </p>
-            <!-- <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab
-              incidunt dolores, eius et delectus distinctio. Illo deserunt
-              perspiciatis fugiat, recusandae, explicabo voluptatem soluta
-              corporis fuga voluptas sequi autem officiis.
-            </p> -->
             <!-- <a href="#about" class="btn btn-success mt-3">
               <i class="bi bi-chevron-right"></i> Read more
             </a> -->
@@ -379,9 +368,7 @@
                 <h3 class="card-title mb-3">Saul Huerta</h3>
                 <p class="card-text">Owner<br />Mexico Market Business Lead</p>
                 <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <!-- <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a> -->
-                <!-- <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
-                <!-- <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a> -->
+                <a href="#"><i class="bi bi-whatsapp text-dark mx-1"></i></a>
               </div>
             </div>
           </div>
@@ -396,9 +383,7 @@
                 <h3 class="card-title mb-3">Alfredo Aguirre</h3>
                 <p class="card-text"><br />US Market Business Lead</p>
                 <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <!-- <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a> -->
-                <!-- <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
-                <!-- <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a> -->
+                <a href="#"><i class="bi bi-whatsapp text-dark mx-1"></i></a>
               </div>
             </div>
           </div>
@@ -488,7 +473,7 @@
           </div>
           <div class="modal-body">
             <p class="lead">Fill out this form and we will get back to you</p>
-            <form>
+            <form id="form">
               <div class="mb-3">
                 <label for="first-name" class="col-form-label">
                   First Name:
@@ -515,7 +500,6 @@
               </div>
               <div class="mb-3">
                 <label for="message" class="col-form-label"> Message: </label>
-                <!-- <input type="tel" class="form-control" id="message" /> -->
                 <textarea class="form-control" id="message" rows="3"></textarea>
               </div>
             </form>
@@ -528,7 +512,7 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" class="btn btn-outline-primary" form="form">
               Submit
             </button>
           </div>
