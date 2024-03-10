@@ -1,7 +1,5 @@
 "use strict";
 
-const form = document.getElementById("form");
-
 const displayMap = function () {
   const map = L.map("map").setView(
     [25.711996141653927, -100.2934482337229],
@@ -36,3 +34,18 @@ displayMap();
 //     contactMsg
 //   );
 // });
+
+window.addEventListener("load", function () {
+  const form = document.getElementById("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: "POST",
+      body: data,
+    }).then(() => {
+      alert("Success!");
+    });
+  });
+});
