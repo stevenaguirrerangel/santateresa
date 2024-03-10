@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
       body: data,
     }).then(() => {
       form.reset();
-      alert("Success!");
+      alert("Success! We'll get back to you as soon as possible!");
     });
   });
 });
