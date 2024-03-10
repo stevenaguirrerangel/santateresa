@@ -473,26 +473,42 @@
           </div>
           <div class="modal-body">
             <p class="lead">Fill out this form and we will get back to you</p>
+
             <form id="form">
               <div class="mb-3">
                 <label for="first-name" class="col-form-label">
                   First Name:
                 </label>
-                <input type="text" class="form-control" id="first-name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="last-name" class="col-form-label">
                   Last Name:
                 </label>
-                <input type="text" class="form-control" id="last-name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="business" class="col-form-label"> Company: </label>
-                <input type="text" class="form-control" id="business" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="business"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="email" class="col-form-label"> Email: </label>
-                <input type="email" class="form-control" id="email" />
+                <input type="email" class="form-control" id="email" required />
               </div>
               <div class="mb-3">
                 <label for="phone" class="col-form-label"> Phone: </label>
@@ -502,19 +518,22 @@
                 <label for="message" class="col-form-label"> Message: </label>
                 <textarea class="form-control" id="message" rows="3"></textarea>
               </div>
+              <hr />
+              <div class="mb-3 float-end">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="btn btn-outline-primary"
+                />
+              </div>
             </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-outline-primary" form="form">
-              Submit
-            </button>
           </div>
         </div>
       </div>
