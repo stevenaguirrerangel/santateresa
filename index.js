@@ -19,20 +19,20 @@ const displayMap = function () {
 
 displayMap();
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const firstName = document.getElementById("first-name").value;
-  const lastName = document.getElementById("last-name").value;
-  const businessName = document.getElementById("business").value;
-  const businessEmail = document.getElementById("email").value;
-  const phoneNumber = document.getElementById("phone").value;
-  const contactMsg = document.getElementById("message").value;
-  console.log(
-    firstName,
-    lastName,
-    businessName,
-    businessEmail,
-    phoneNumber,
-    contactMsg
-  );
-});
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   const firstName = document.getElementById("first-name").value;
+//   const lastName = document.getElementById("last-name").value;
+//   const businessName = document.getElementById("business").value;
+//   const businessEmail = document.getElementById("email").value;
+//   const phoneNumber = document.getElementById("phone").value;
+//   const contactMsg = document.getElementById("message").value;
+//   console.log(
+//     firstName,
+//     lastName,
+//     businessName,
+//     businessEmail,
+//     phoneNumber,
+//     contactMsg
+//   );
+// });

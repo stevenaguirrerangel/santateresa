@@ -474,7 +474,11 @@
           <div class="modal-body">
             <p class="lead">Fill out this form and we will get back to you</p>
 
-            <form id="form">
+            <form
+              id="form"
+              action="https://formsubmit.co/programmingxtester@gmail.com"
+              method="POST"
+            >
               <div class="mb-3">
                 <label for="first-name" class="col-form-label">
                   First Name:
@@ -483,6 +487,7 @@
                   type="text"
                   class="form-control"
                   id="first-name"
+                  name="first-name"
                   required
                 />
               </div>
@@ -494,6 +499,7 @@
                   type="text"
                   class="form-control"
                   id="last-name"
+                  name="last-name"
                   required
                 />
               </div>
@@ -503,20 +509,37 @@
                   type="text"
                   class="form-control"
                   id="business"
+                  name="business"
                   required
                 />
               </div>
               <div class="mb-3">
                 <label for="email" class="col-form-label"> Email: </label>
-                <input type="email" class="form-control" id="email" required />
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="phone" class="col-form-label"> Phone: </label>
-                <input type="tel" class="form-control" id="phone" />
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                />
               </div>
               <div class="mb-3">
                 <label for="message" class="col-form-label"> Message: </label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="3"
+                ></textarea>
               </div>
               <hr />
               <div class="mb-3 float-end">
